@@ -7,27 +7,29 @@ import EmptyChat from "./chat/EmptyChat";
 
 const Component = styled(Box)`
     display: flex;
+    border-radius: 10px;
 `;
 
 
 const LeftComponent = styled(Box)`
     min-width: 450px;
+    
 `;
 
 
 const Rightcomponent = styled(Box)`
     width: 73%;
     min-width: 300px;
-    height; 100%;
+    height: 100%;
     border-left: 1px solid rgba(0, 0, 0, 0.14);
-`
-
-
+`;
 
 const dialogStyle ={
-    height: '95%',
+    height: '620px',
     width: '100%',   
-    margin: '20px', 
+    marginBottom: '0px',
+    marginRight: '8px', 
+    marginLeft: '50px', 
     maxWidth: '100%',
     maxHeight: '100%',
     boxshadow: 'none',
