@@ -16,7 +16,27 @@ const ImageContainer = styled(Box)`
 
     const BoxWrapper = styled(Box)`
         background: #ffffff;
-        padding: '12px 30px 12px 30px';
+        padding: '14px 30px 14px 30px';
+        box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+        & : first-child {
+            font-size: 13px;
+            color: #337CCF;
+            font-weiight: 200;
+            margin-left: 13px;
+        }
+        & : last-child {
+            margin-left: 13px;
+            color: 4A4A4A;
+            padding: 10px 0;
+        }
+    `;
+
+    const DescriptionContainer = styled(Box)`
+            padding: 15px 20px 28px 30px;
+            & > p {
+                font-size: 13px;
+                color: 8696a0;
+            }
     `;
 
 
@@ -31,10 +51,15 @@ const Profile = () => {
             </ImageContainer>
             <BoxWrapper>
                 <Typography>Your Name</Typography>
-                <Typography>{account.name} 😃</Typography>
+                <Typography>{account.name} 😎</Typography>
             </BoxWrapper>
-            <Box></Box>
-            <Box></Box>
+            <DescriptionContainer>
+                <Typography>This is not your username or pin. This name will be visible to your contact</Typography>
+            </DescriptionContainer>
+            <BoxWrapper>
+                <Typography>About</Typography>
+                <Typography>Eat! - Sleep! - Code! - Repeat!</Typography>
+            </BoxWrapper>
         </>
     )
 }

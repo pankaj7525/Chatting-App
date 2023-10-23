@@ -9,7 +9,7 @@ import InfoDrawer from "../../drawer/InfoDrawer";
 
 const Component = styled(Box)`
     height: 85px ;
-    background: #ededed ;
+    background: #edededed ;
     padding: 8px 20px ;
     display: flex;
     align-items: center;
@@ -36,8 +36,8 @@ const Wrapper = styled(Box)`
     }
 `;
 const Image = styled('img')({
-    height: 40,
-    width: 40,
+    height: 28,
+    width: 30,
     borderRadius: '50%', 
   })
 
@@ -54,11 +54,12 @@ const Header = () => {
         <>
             <Component>
             
-                  <Image src={account.picture} alt="dp" onClick={() => toggleDrawer()} />
-                   <Typography style={{ fontWeight: '700', fontSize: '25px', fontStyle: 'inherit' }}>Chats</Typography>
+                  
+                   <Typography style={{ fontWeight: '700', fontSize: '28px', fontStyle: 'inherit' }}>Chats</Typography>
                 <Wrapper>
+                    <Image src={account.picture} alt="dp" onClick={() => toggleDrawer()} />
                     <DonutLargeOutlined />
-                    <HeaderMenu/> 
+                    <HeaderMenu setOpenDrawer={setOpenDrawer} /> 
                 </Wrapper>
             </Component>
             <InfoDrawer open={openDrawer} setOpen={setOpenDrawer} />

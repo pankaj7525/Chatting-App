@@ -17,38 +17,30 @@ const Component = styled(Box)`
 `;
 
 const AppLogo = styled(Box)`
-    height: 44px;
-    display: flex;
-    align-items: center;
+    height: 30px;
+    padding: 1px 0px 12px 1px;
+    
 `;
 const MsgIcon = styled(Box)`
     height: 40px;
-    padding: 19px 10px ;
+    padding: 49px 28px;
     display: flex;
 `;
 const PhnIcon = styled(Box)`
     height: 40px;
-    padding: 19px 10px ;
+    padding: 5px 28px ;
     display: flex;
 `;
-// const Component05 = styled(Box)`
-//     height: 40px;
-//     padding: 19px 10px ;
-//     display: flex;
-//     align-items: center;
-// `;
+
+const Title = styled(Box)`
+    padding: 5px 20px;
+`;
 
 const Image = styled('img')({
-  height: 32,
-  width: 32,
-  borderRadius: '50%',
-})
-
-// const Image = styled('img')({
-//   height: 32,
-//   width: 32,
-//   borderRadius: '50%', 
-// })
+  height: 30,
+  width: 30,
+  // borderRadius: '50%',
+});
 
 const Header = styled(AppBar)`
   height: 355px;
@@ -79,28 +71,25 @@ const Messenger = () => {
             <>
                 <Header>
                       <Toolbar>
-                           <AppLogo>
-                               <Image src="https://png.pngtree.com/element_our/png/20181229/vector-chat-icon-png_302635.jpg" alt="logo" />
+                           <AppLogo sx={{ m: -2 }}>
+                               <Image src="https://cdn-icons-png.flaticon.com/128/4439/4439019.png" alt="logo" />
                            </AppLogo>
-                            <Typography>ChatEase</Typography> 
-                            {/* TapMe */}
+                           <Title sx={{ m: 0, mt: -2 }}>
+                           <Typography>ChatEase</Typography>
+                           </Title>
                       </Toolbar>
-                      <MsgIcon>
+                      <MsgIcon sx={{ m: -2 }}>
                         <MessageIcon />
                       </MsgIcon>
-                      <PhnIcon>
+                      <PhnIcon sx={{ m: -2 }}>
                       <LocalPhoneOutlined />
                       </PhnIcon>
-                      {/* <Component05>
-                        <Image src={account.picture} alt="dp" onClick={() => toggleDrawer()} />
-                      </Component05> */}
-                      {/* <InfoDrawer open={openDrawer} setOpen={setOpenDrawer} /> */}
                   </Header>
                   <ChatDialog />
             </>
             :
             <>
-              
+
               <LoginHeader>
                   <Toolbar>
 
