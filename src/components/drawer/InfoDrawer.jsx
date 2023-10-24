@@ -30,11 +30,12 @@ const InfoDrawer = ({ open, setOpen }) => {
 
 
     const drawerStyle = {
-        left: 52,
-        top: 59,
-        height: '87.5%',
+        left: 40,
+        top: 45,
+        height: '89%',
         width: '30%',
-        boxShadow: 'none'
+        boxShadow: 'none',
+        borderRadius: '10px',
     }
 
     const handleClose = () =>{

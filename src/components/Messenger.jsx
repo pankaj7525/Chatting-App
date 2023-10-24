@@ -12,23 +12,23 @@ import ChatDialog from "./chat/ChatDialog";
 
 const Component = styled(Box)`
  height: 100vh;
- background-color: #FFC436;
+ background: linear-gradient(45deg, #F8DE22 30%, #068FFF 90%);
  box-shadow: inset 0 0 30px 15px rgba(44, 27, 43, 0.96);
 `;
 
 const AppLogo = styled(Box)`
-    height: 30px;
+    height: 28px;
     padding: 1px 0px 12px 1px;
     
 `;
 const MsgIcon = styled(Box)`
     height: 40px;
-    padding: 49px 28px;
+    padding: 43px 23px;
     display: flex;
 `;
 const PhnIcon = styled(Box)`
     height: 40px;
-    padding: 5px 28px ;
+    padding: 5px 23px ;
     display: flex;
 `;
 
@@ -43,13 +43,13 @@ const Image = styled('img')({
 });
 
 const Header = styled(AppBar)`
-  height: 355px;
-  background-color: #337CCF;
+  height: 350px;
+  background: linear-gradient(45deg, #068FFF 30%, #F8DE22 90%);
   box-shadow: inset 0 0 30px 15px rgba(44, 27, 43, 0.96);
 `
 const LoginHeader = styled(AppBar)`
-  height: 368px;
-  background-color: #337CCF;
+  height: 350px;
+  background:linear-gradient(45deg, #068FFF 30%, #F8DE22 90%);
   box-shadow: inset 0 0 30px 15px rgba(44, 27, 43, 0.96);
 `
 
@@ -71,7 +71,7 @@ const Messenger = () => {
             <>
                 <Header>
                       <Toolbar>
-                           <AppLogo sx={{ m: -2 }}>
+                           <AppLogo sx={{ m: -2.5 }}>
                                <Image src="https://cdn-icons-png.flaticon.com/128/4439/4439019.png" alt="logo" />
                            </AppLogo>
                            <Title sx={{ m: 0, mt: -2 }}>

@@ -9,18 +9,11 @@ import InfoDrawer from "../../drawer/InfoDrawer";
 
 const Component = styled(Box)`
     height: 85px ;
-    background: #edededed ;
+    background: linear-gradient(45deg, #B4B4B3 30%, #93B1A6 90%) ;
     padding: 8px 20px ;
     display: flex;
     align-items: center;
 `;
-
-// const Component05 = styled(Box)`
-//     height: 40px;
-//     padding: 19px 10px ;
-//     display: flex;
-//     align-items: center;
-// `;
 
 const Wrapper = styled(Box)`
     margin-left: auto;

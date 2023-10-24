@@ -25,15 +25,16 @@ const Rightcomponent = styled(Box)`
 `;
 
 const dialogStyle ={
-    height: '620px',
+    height: '630px',
     width: '100%',   
-    marginBottom: '0px',
-    marginRight: '8px', 
-    marginLeft: '50px', 
+    marginBottom: '20px',
+    marginRight: '40px', 
+    marginLeft: '40px', 
     maxWidth: '100%',
     maxHeight: '100%',
     boxshadow: 'none',
     overflow: 'hidden',
+    borderRadius: '10px',
 }
 
 

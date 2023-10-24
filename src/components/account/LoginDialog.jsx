@@ -80,7 +80,7 @@ const LoginDialog = () => {
               </Container>
               <Box style={{ position: 'relative'}}>
                 <QRCode src={qrCodeImage} alt="qr code" />
-                <Box style={{ position: 'absolute', top: '50%', transform: 'translateX(25%)' }}>
+                <Box style={{ position: 'absolute', top: '50%', left: '15%', transform: 'translateX(25%)' }}>
                    <GoogleLogin
                      onSuccess={onLoginSuccess}
                      onError={onLoginError}
