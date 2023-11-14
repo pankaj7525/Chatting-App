@@ -1,9 +1,9 @@
-import user from "../model/user.js";
+import User from "../model/user.js";
 
 export const addUser = async(request , response)=>{
 
     try{
-       let exist = await user.findOne({sub: request.body.sub});
+       let exist = await User.findOne({sub: request.body.sub});
 
        if (exist){
             response.status(200).json({ msg: "user already exist" });

@@ -12,6 +12,7 @@ const Conversations = () => {
     useEffect(() => {
         const fetchData = async ()=>{
             let response = await getUsers();
+            // console.log(response);
             setUsers(response);
         }
         fetchData();
@@ -21,9 +22,13 @@ const Conversations = () => {
     return(
         <Box>
             {
-                users&&users.map(user =>(
-                    <Conversation />
-                ))
+                users.map((user)=>{
+                    console.log("user:",user);
+                    return (
+                        <>
+                    <Conversation/>{user.name}</>
+                    )
+                })
             }
         </Box>
     )
