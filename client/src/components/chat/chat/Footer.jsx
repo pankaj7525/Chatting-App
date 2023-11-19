@@ -1,10 +1,11 @@
+
 import { Box, InputBase, styled } from '@mui/material';
 import { EmojiEmotionsOutlined, Attachment, Mic } from '@mui/icons-material';
 
 
 const Container = styled(Box)`
     height: 61px;
-    background: linear-gradient(45deg, #B4B4B3 30%, #93B1A6 90%);
+    background: linear-gradient(45deg, #93B1A6 30%, #B4B4B3 90%);
     display: flex;
     width: 100%;
     align-items: center;
@@ -30,7 +31,8 @@ const InputField = styled(InputBase)`
 `;
 
 
-const Footer = () => {
+const Footer = ({ sendText, setValue, value }) => {
+
 
     return (
 
@@ -39,7 +41,10 @@ const Footer = () => {
             <Attachment />
             <Search>
                 <InputField 
-                    placeholder='type a message'
+                    placeholder='Type a message'
+                    onChange={(e) => setValue(e.target.value)}
+                    onKeyPress={(e) => sendText(e)}
+                    value={value}
                 />
             </Search>
             <Mic />

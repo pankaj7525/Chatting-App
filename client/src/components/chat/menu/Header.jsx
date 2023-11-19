@@ -9,7 +9,7 @@ import InfoDrawer from "../../drawer/InfoDrawer";
 
 const Component = styled(Box)`
     height: 55px ;
-    background: linear-gradient(45deg, #B4B4B3 30%, #93B1A6 90%) ;
+    background: linear-gradient(45deg, #93B1A6 30%, #B4B4B3 90%) ;
     padding: 8px 20px ;
     display: flex;
     align-items: center;
