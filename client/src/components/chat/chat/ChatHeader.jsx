@@ -1,7 +1,10 @@
+import { useContext } from 'react';
+
 import { Box, Typography, styled } from '@mui/material';
 import { Search, MoreVert, LocalPhone, Videocam } from '@mui/icons-material';
 
-import { defaultProfilePicture } from '../../../constants/data';
+// import { defaultProfilePicture } from '../../../constants/data';
+import { AccountContext } from '../../../context/AccountProvider';
 
 
 
@@ -40,6 +43,9 @@ const RightContainer = styled(Box)`
 
 
 const ChatHeader = ({person}) => {
+    
+    const { activeUsers } = useContext(AccountContext);
+
 
     return(
 
@@ -47,7 +53,8 @@ const ChatHeader = ({person}) => {
             <Image src={person.picture} alt='dp' />
             <Box>
                 <Name>{person.name}</Name>
-                <Status>Offline</Status>
+                <Status>{activeUsers?.find(user=> user.sub === person.sub) ? 'online': 'offline'}</Status>
+
             </Box>
             <RightContainer>
                 <Videocam />
