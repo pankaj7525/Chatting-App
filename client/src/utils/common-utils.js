@@ -24,7 +24,7 @@ export const downloadMedia = (e, originalImage)=>{
             a.download = "" + duplicateName + "";
             document.body.appendChild(a);
             a.click();
-            window.URl.revovkeObjectURl(url);
+            window.URL.revovkeObjectURl(url);
         }).catch(error => console.log('Error while downloading the Image', error.message)); 
     } catch (error) {
         console.log('Error while downloading the Image', error.message);

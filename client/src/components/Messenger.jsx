@@ -12,8 +12,9 @@ import ChatDialog from './chat/ChatDialog';
 
 const Component = styled(Box)`
  height: 100vh;
- background: linear-gradient(45deg, #F8DE22 30%, #068FFF 90%);
- box-shadow: inset 0 0 30px 15px rgba(44, 27, 43, 0.96);
+//  background: linear-gradient(45deg, #F8DE22 30%, #068FFF 90%);
+    background: linear-gradient(180deg, #0B7510 0%, rgba(84, 125, 18, 0.54) 45.83%, #95A4BB 100%);
+    box-shadow: inset 0 0 30px 15px rgba(44, 27, 43, 0.96);
 `;
 
 const AppLogo = styled(Box)`
@@ -49,7 +50,8 @@ const Header = styled(AppBar)`
 `
 const LoginHeader = styled(AppBar)`
   height: 350px;
-  background:linear-gradient(45deg, #068FFF 30%, #F8DE22 90%);
+  // background:linear-gradient(45deg, #068FFF 30%, #F8DE22 90%);
+  background: linear-gradient(180deg, #1F4F87 0%, rgba(125, 18, 120, 0.54) 45.83%, #4178CA 100%);
   box-shadow: inset 0 0 30px 15px rgba(44, 27, 43, 0.96);
 `
 

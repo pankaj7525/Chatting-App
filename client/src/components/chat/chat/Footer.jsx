@@ -59,9 +59,10 @@ const Footer = ({ sendText, setValue, value, file, setFile, setImage }) => {
     return (
 
         <Container>
-            <EmojiEmotionsOutlined />
-            <label htmlFor='fileInput'>
-
+            <EmojiEmotionsOutlined
+             style={{cursor:'pointer'}}/>
+            <label htmlFor='fileInput'
+                style={{cursor:'pointer'}}>
                 <Attachment />
             </label>
              <input

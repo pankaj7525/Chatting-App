@@ -9,9 +9,9 @@ import Conversation from "./Conversation";
 
 
 const Component = styled(Box)`
-    height: 81vh;
+    max-height: 81vh;
+    min-height: 55vh;
     overflow: overlay;
-
 `
 
 const StyledDivider =   styled(Divider)`

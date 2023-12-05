@@ -2,7 +2,7 @@
 import { Box, Typography, styled, Divider } from '@mui/material';
 
 const Component = styled(Box)`
-     background: #ffffff;
+     background: #f7f5f9;
      padding: 30px 0;
      text-align: center;
      height: 100vh;
@@ -38,7 +38,7 @@ const SubTitle = styled(Typography)`
 const SubTitle02 = styled(Typography)`
     font-size: 14px;
     margin: 0px 0 1px 0;
-    color: #667781;
+    color: #A8A9A4;
     font-weight: 400;
     font-family: inherit;
     

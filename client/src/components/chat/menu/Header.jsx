@@ -9,7 +9,8 @@ import InfoDrawer from "../../drawer/InfoDrawer";
 
 const Component = styled(Box)`
     height: 55px ;
-    background: linear-gradient(45deg, #93B1A6 30%, #B4B4B3 90%) ;
+    // background: linear-gradient(45deg, #93B1A6 30%, #A5A7A8 90%) ;
+    background: linear-gradient(180deg, #0B7510 0%, rgba(84, 125, 18, 0.54) 45.83%, #95A4BB 100%);
     padding: 8px 20px ;
     display: flex;
     align-items: center;
@@ -46,8 +47,8 @@ const Header = () => {
     return(
         <>
             <Component>
-                   <Typography style={{ fontWeight: '700', fontSize: '28px', fontStyle: 'inherit' }}>Chats</Typography>
-                <Wrapper>
+                   <Typography style={{ fontWeight: '700', fontSize: '28px', fontStyle: 'inherit', }}>Chats</Typography>
+                <Wrapper style={{cursor:'pointer'}}>
                     <Image src={account.picture} alt="dp" onClick={() => toggleDrawer()} />
                     <DonutLargeOutlined />
                     <HeaderMenu setOpenDrawer={setOpenDrawer} /> 
