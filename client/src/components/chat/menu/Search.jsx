@@ -2,7 +2,7 @@ import { Box, InputBase, styled } from "@mui/material";
 import { Search as SearchIcon } from "@mui/icons-material";
 
 const Component = styled(Box)`
-    background:linear-gradient(45deg, #352F44  30%, #B9B4C7 30%, #FAF0E6 75%, #5C5470 30%);
+    background:#000000;
     height: 55px;
     display: flex;
     align-items: center;

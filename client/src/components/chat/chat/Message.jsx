@@ -7,7 +7,7 @@ import { iconPDF } from '../../../constants/data';
 
 
 const Own = styled(Box)`
-     background: #068FFF;
+     background:linear-gradient(45deg, #7978FF  30%, #C47AFF 80%);
      max-width: 60%;
      margin-left: auto;
      padding: 5px;
@@ -18,7 +18,7 @@ const Own = styled(Box)`
 `;
 
 const Wrapper = styled(Box)`
-     background: #F8DE22;
+     background:linear-gradient(45deg, #C060A1  30%, #FFAA4C 80%);
      max-width: 60%;
      padding: 5px;
      width: fit-content;

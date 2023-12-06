@@ -11,8 +11,8 @@ import { Message } from './Message';
 // import { Socket } from 'socket.io-client';
 
 const Wrapper = styled(Box)`
-    background-image: url(${'https://img.freepik.com/premium-vector/social-networks-dating-apps-vector-seamless-pattern_341076-469.jpg'});
-    background-size: 50%;
+    background-image: url(${'https://img.freepik.com/premium-vector/speech-bubble-vector-concept-seamless-pattern-background_104589-2051.jpg?ga=GA1.1.969494356.1694080918&semt=ais'});
+    background-size: 25%;
 `;
 
 

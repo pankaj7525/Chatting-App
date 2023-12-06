@@ -5,20 +5,20 @@ import { uploadFile } from '../../../service/api';
 
 
 const Container = styled(Box)`
-    height: 61px;
-    background: linear-gradient(45deg, #93B1A6 30%, #B4B4B3 90%);
+    height: 65px;
+    background:linear-gradient(45deg, #352F44  30%, #B9B4C7 30%, #FAF0E6 75%, #5C5470 30%);
     display: flex;
     width: 100%;
     align-items: center;
-    padding: 0 15px;
+    padding: 6px 15px;
     & > * {
-        margin: 5px;
-        color: #000;
+        margin: 8px;
+        color: #ffffff;
     }
 `;
 
 const Search = styled(Box)`
-    background-color: #ffffff;
+    background-color: grey;
     border-radius: 18px;
     width: calc(94% - 100px);
 `;
@@ -26,7 +26,7 @@ const Search = styled(Box)`
 const InputField = styled(InputBase)`
     width: 100%;
     padding: 20px;
-    height: 20px;
+    height: 30px;
     padding-left: 25px;
     font-size: 14px;  
 `;
@@ -79,7 +79,7 @@ const Footer = ({ sendText, setValue, value, file, setFile, setImage }) => {
                     value={value}
                 />
             </Search>
-            <Mic />
+            {/* <Mic /> */}
         </Container>
     )
 }

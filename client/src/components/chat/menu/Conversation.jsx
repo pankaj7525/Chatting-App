@@ -16,7 +16,7 @@ const Image = styled('img')({
     width: 50,
     height: 50,
     borderRadius: '50%',
-    padding: '25px 14px',
+    padding: '0px 14px',
     objectFit: 'cover'
 })
 
@@ -46,7 +46,7 @@ const  Conversation = ({user}) => {
                 <Image src={user.picture} alt="dp"/>
             </Box>
             <Box>
-                <Box style={{color: 'white', padding: '32px 14px'}}>
+                <Box style={{color: 'white', padding: '10px 14px'}}>
                     <Typography>{user.name}</Typography>
                     {
                         message?.text &&

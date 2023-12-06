@@ -7,8 +7,8 @@ import Profile from './Profile';
 const InfoDrawer = ({ open, setOpen }) => {
 
     const Header = styled(Box)`
-        background: #337CCF;
-        height: 107px;
+        background:linear-gradient(45deg, #352F44  30%, #B9B4C7 30%, #FAF0E6 75%, #5C5470 30%);
+        height: 120px;
         color: #ffffff;
         display: flex;
         & > svg, & > p{
@@ -19,12 +19,12 @@ const InfoDrawer = ({ open, setOpen }) => {
     `;
 
     const Component = styled(Box)`
-        background: #ededed;
+        background: #222222;
         height: 85%;
     `;
 
     const Text = styled(Typography)`
-        font-size: 18px;
+        font-size: 20px;
     `;
 
 

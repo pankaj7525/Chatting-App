@@ -31,9 +31,9 @@ const Title = styled(Typography)`
 `;
 
 const SubTitle = styled(Typography)`
-    font-size: 20px;
-    margin: 0px 0 1px 0;
-    color: #667781;
+    font-size: 22px;
+    margin: 0px 0 2px 0;
+    color: #A9A9A9;
     font-weight: 600;
     font-family: inherit;
     
@@ -41,14 +41,14 @@ const SubTitle = styled(Typography)`
 const SubTitle02 = styled(Typography)`
     font-size: 14px;
     margin: 0px 0 1px 0;
-    color: #A8A9A4;
+    color: #A9A9A9;
     font-weight: 400;
     font-family: inherit;
     
 `;
 
 const StyledDivider = styled(Divider)`
-    margin: 40px 0;
+    margin: 20px 0;
 `;
 
 const EmptyChat = () => {
@@ -56,11 +56,11 @@ const EmptyChat = () => {
         <Component>
             <Container>
                 <Image src={background} alt=""/>
-                <Title>ChatEase</Title>
+                <Title>🅲🅷🅰🆃🅴🅰🆂🅴</Title>
                 <SubTitle>" 𝔏𝔢𝔱'𝔰 𝔰𝔱𝔞𝔯𝔱 𝔠𝔥𝔞𝔱𝔱𝔦𝔫𝔤! "</SubTitle>
-                <SubTitle02> Pick a person from left menu and start your conversation. </SubTitle02>
-                <SubTitle02>Now send and recieve messages without keeping your phone online. </SubTitle02>
-                <StyledDivider sx={{ borderBottomWidth: 8, borderBlockColor: 'grey' }}/>
+                <SubTitle02>𝙽𝚘 𝚖𝚎𝚜𝚜𝚊𝚐𝚎𝚜 𝚒𝚗 𝚢𝚘𝚞𝚛 𝚒𝚗𝚋𝚘𝚡 𝚢𝚎𝚝!!!</SubTitle02>
+                <SubTitle02>𝙿𝚒𝚌𝚔 𝚊 𝚙𝚎𝚛𝚜𝚘𝚗 𝚏𝚛𝚘𝚖 𝚕𝚎𝚏𝚝 𝚖𝚎𝚗𝚞 𝚊𝚗𝚍 𝚜𝚝𝚊𝚛𝚝 𝚢𝚘𝚞𝚛 𝚌𝚘𝚗𝚟𝚎𝚛𝚜𝚊𝚝𝚒𝚘𝚗. </SubTitle02>
+                <StyledDivider sx={{ borderBottomWidth: 3, borderBlockColor: '#A9A9A9' }}/>
             </Container>
         </Component>
     )

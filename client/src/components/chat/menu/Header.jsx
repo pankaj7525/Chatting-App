@@ -20,8 +20,8 @@ const Wrapper = styled(Box)`
         color;#000;    
     };
     & :first-child {
-        font-size: 22px;
-        margin-right: 8px;
+        font-size: 10px;
+        margin-right: 30px;
         margin-top: 3px;
     }
 `;
@@ -46,7 +46,6 @@ const Header = () => {
              <Typography style={{ fontWeight: '700', fontSize: '38px', fontStyle: 'inherit', color: 'white' }}>𝔠𝔥𝔞𝔱𝔰</Typography>
                 <Wrapper style={{cursor:'pointer', color: 'white'}}>
                     <Image src={account.picture} alt="dp" onClick={() => toggleDrawer()} />
-                    {/* <DonutLargeOutlined /> */}
                     <HeaderMenu setOpenDrawer={setOpenDrawer} /> 
                 </Wrapper>
             </Component>

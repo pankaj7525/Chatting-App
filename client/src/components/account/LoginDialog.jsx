@@ -23,7 +23,7 @@ const Logo = styled('img')({
 
 const Title = styled(Typography)`
   font-size: 30px;
-  color: #D80032;
+  color: #ffffff;
   font-weight: 500;
   font-family: inherit;
   margin-bottom: 25px; 
@@ -34,7 +34,7 @@ const StyledList = styled(List)`
     margin-top: 60px;
     font-size: 18px;
     line-height: 28px;
-    color: #D80032;
+    color: #ffffff;
 `
 
 const dialogStyle = {
@@ -83,7 +83,7 @@ const LoginDialog = () => {
               </Container>
               <Box style={{ position: 'relative'}}>
                 <Logo src={logo} alt="qr code" />
-                <Box style={{ position: 'absolute', top: '91%', left: 37, transform: 'translateX(25%)' }}>
+                <Box style={{ position: 'absolute', top: '91%', left: 8, transform: 'translateX(25%)' }}>
                    <GoogleLogin
                      onSuccess={onLoginSuccess}
                      onError={onLoginError}

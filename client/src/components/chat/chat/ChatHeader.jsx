@@ -10,7 +10,7 @@ import { AccountContext } from '../../../context/AccountProvider';
 
 const Header = styled(Box)`
     height: 55px;
-    background: linear-gradient(45deg, #93B1A6 30%, #B4B4B3 90%);
+    background:linear-gradient(45deg, #352F44  30%, #B9B4C7 30%, #FAF0E6 75%, #5C5470 30%);
     padding: 8px 16px;
     display: flex;
     align-items: center;
@@ -25,11 +25,12 @@ const Image = styled('img')({
 
 const Name = styled(Typography)`
     margin-left: 12px !important;
+    color: #fff;
 `
 const Status = styled(Typography)`
     margin-left: 12px !important;
     font-size: 12px;
-    color: rgba(0,0,0,0.6);
+    color: #EEF5FF;
 `;
 
 const RightContainer = styled(Box)`
@@ -37,7 +38,7 @@ const RightContainer = styled(Box)`
     & > svg {
         padding: 8px;
         font-size: 24px;
-        color: #000;
+        color: #fff;
     }
 `;
 
@@ -57,7 +58,7 @@ const ChatHeader = ({person}) => {
 
             </Box>
             <RightContainer>
-                <Videocam />
+                {/* <Videocam /> */}
                 <LocalPhone />
                 <Search />
                 <MoreVert />

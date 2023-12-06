@@ -34,7 +34,7 @@ const AppLogo = styled(Box)`
 // `;
 
 const Title = styled(Box)`
-    padding: 5px 20px;
+    padding: 5px 25px;
 `;
 
 const Image = styled('img')({
@@ -72,11 +72,11 @@ const Messenger = () => {
             <>
                 <Header>
                       <Toolbar>
-                           <AppLogo sx={{ m: -2.5  }}>
+                           <AppLogo sx={{ mx: -2.5, mt: -2 }}>
                                <Image src={logoblack} alt="logo" />
                            </AppLogo>
-                           <Title sx={{ m: 0, mt: -2 }}>
-                           <Typography>𝖢𝗁𝖺𝗍𝖤𝖺𝗌𝖾</Typography>
+                           <Title sx={{ m: 0, mt: -3 }}>
+                           <Typography>🅲🅷🅰🆃🅴🅰🆂🅴</Typography>
                            </Title>
                       </Toolbar>
                       {/* <MsgIcon sx={{ m: -2 }}>

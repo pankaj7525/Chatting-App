@@ -12,13 +12,13 @@ const Component = styled(Box)`
     max-height: 81vh;
     min-height: 55vh;
     overflow: overlay;
-`
+`;
 
 const StyledDivider =   styled(Divider)`
-    margin: 0 0 0 70px;
-    background: #e9edef;
-    opacity: .6;
-`
+    margin: 0 10px 0 10px;
+    background: #A9A9A9;
+    opacity: .2;
+`;
 
 const Conversations = ({ text }) => {
   const [users, setUsers] = useState([]);
@@ -50,8 +50,9 @@ const Conversations = ({ text }) => {
         return (
           <Fragment key={index}>
             {user.sub !== account.sub && <Conversation user={user} /> }
-            <StyledDivider/>
+          <StyledDivider/>
           </Fragment>
+          
         );
       })}
     </Component>
