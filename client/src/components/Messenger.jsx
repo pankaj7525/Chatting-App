@@ -1,7 +1,8 @@
 import { useContext } from "react";
 import { AppBar, Box, Toolbar, Typography, styled } from "@mui/material";
 import { AccountContext } from "../context/AccountProvider";
-import { Chat as MessageIcon, LocalPhoneOutlined } from '@mui/icons-material';
+// import { Chat as MessageIcon, LocalPhoneOutlined } from '@mui/icons-material';
+import logoblack from './logoblack.png'
 
 
 
@@ -71,11 +72,11 @@ const Messenger = () => {
             <>
                 <Header>
                       <Toolbar>
-                           <AppLogo sx={{ m: -2.5 }}>
-                               <Image src="https://cdn-icons-png.flaticon.com/128/4439/4439019.png" alt="logo" />
+                           <AppLogo sx={{ m: -2.5  }}>
+                               <Image src={logoblack} alt="logo" />
                            </AppLogo>
                            <Title sx={{ m: 0, mt: -2 }}>
-                           <Typography>ChatEase</Typography>
+                           <Typography>𝖢𝗁𝖺𝗍𝖤𝖺𝗌𝖾</Typography>
                            </Title>
                       </Toolbar>
                       {/* <MsgIcon sx={{ m: -2 }}>

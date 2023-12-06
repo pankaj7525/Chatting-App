@@ -1,10 +1,11 @@
 import { useContext } from 'react';
 import { Dialog, Box, Typography, List, ListItem, styled } from '@mui/material';
-import { qrCodeImage } from '../../constants/data';
+// import { qrCodeImage } from '../../constants/data';
 import { AccountContext } from '../../context/AccountProvider';
 import { addUser } from '../../service/api';
 import { GoogleLogin } from '@react-oauth/google';
 import jwt_decode from 'jwt-decode';
+import logo from './logo.png'
 
 const Component = styled(Box)`
   display: flex;
@@ -14,10 +15,10 @@ const Container = styled(Box)`
   padding: 56px 0 56px 56px;
 `;
 
-const QRCode = styled('img')({
-    height: 200,
-    width: 200,
-    margin: '135px 0 0 20px'
+const Logo = styled('img')({
+    height: 300,
+    width: 300,
+    margin: '78px 0 0 20px'
 });
 
 const Title = styled(Typography)`
@@ -81,8 +82,8 @@ const LoginDialog = () => {
                  </StyledList> 
               </Container>
               <Box style={{ position: 'relative'}}>
-                <QRCode src={qrCodeImage} alt="qr code" />
-                <Box style={{ position: 'absolute', top: '62%', left: -17, transform: 'translateX(25%)' }}>
+                <Logo src={logo} alt="qr code" />
+                <Box style={{ position: 'absolute', top: '91%', left: 37, transform: 'translateX(25%)' }}>
                    <GoogleLogin
                      onSuccess={onLoginSuccess}
                      onError={onLoginError}

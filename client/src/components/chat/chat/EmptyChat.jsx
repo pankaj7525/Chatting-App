@@ -1,5 +1,8 @@
 // import { emptyChatImage } from '../../../constants/data';
 import { Box, Typography, styled, Divider } from '@mui/material';
+import background from './background.png';
+
+
 
 const Component = styled(Box)`
      background: #222222;
@@ -15,7 +18,7 @@ const Container = styled(Box)`
 const Image = styled('img')({
     height: 250,
     width: 450,
-    marginTop: 100
+    marginTop: 100,
 });
 
 
@@ -52,7 +55,7 @@ const EmptyChat = () => {
     return (
         <Component>
             <Container>
-                <Image src="https://img.freepik.com/free-vector/business-people-arranging-appointment-digital-booking-app_74855-20006.jpg?size=626&ext=jpg&ga=GA1.1.969494356.1694080918&semt=ais" alt=""/>
+                <Image src={background} alt=""/>
                 <Title>ChatEase</Title>
                 <SubTitle>" 𝔏𝔢𝔱'𝔰 𝔰𝔱𝔞𝔯𝔱 𝔠𝔥𝔞𝔱𝔱𝔦𝔫𝔤! "</SubTitle>
                 <SubTitle02> Pick a person from left menu and start your conversation. </SubTitle02>

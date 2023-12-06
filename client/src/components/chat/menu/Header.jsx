@@ -43,7 +43,7 @@ const Header = () => {
     return(
         <>
             <Component>
-             <Typography style={{ fontWeight: '700', fontSize: '38px', fontStyle: 'inherit', color: 'white' }}>Chats</Typography>
+             <Typography style={{ fontWeight: '700', fontSize: '38px', fontStyle: 'inherit', color: 'white' }}>𝔠𝔥𝔞𝔱𝔰</Typography>
                 <Wrapper style={{cursor:'pointer', color: 'white'}}>
                     <Image src={account.picture} alt="dp" onClick={() => toggleDrawer()} />
                     {/* <DonutLargeOutlined /> */}
