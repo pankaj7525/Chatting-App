@@ -15,27 +15,25 @@ const Container = styled(Box)`
 `;
 
 const QRCode = styled('img')({
-    height: 264,
-    width: 264,
-    margin: '50px 0 0 50px'
+    height: 200,
+    width: 200,
+    margin: '135px 0 0 20px'
 });
 
 const Title = styled(Typography)`
-  font-size: 26px;
-  color: #525252;
-  font-weight: 300;
+  font-size: 30px;
+  color: #D80032;
+  font-weight: 500;
   font-family: inherit;
   margin-bottom: 25px; 
 `
 
 const StyledList = styled(List)`
-  & > li (
     padding: 0;
-    margin-top: 15px;
+    margin-top: 60px;
     font-size: 18px;
     line-height: 28px;
-    color: #4a4a4a;
-  )
+    color: #D80032;
 `
 
 const dialogStyle = {
@@ -44,8 +42,10 @@ const dialogStyle = {
      width: '60%',
      maxWidth: '100%',
      maxHeight: '65%',
-     boxShadow: 'none',
-     overFlow: 'hidden',  
+     boxShadow: '20px 20px 20px #272829;',
+     overFlow: 'hidden', 
+     backgroundColor: '#000000',
+     borderRadius: '10px' 
 }
 
 const LoginDialog = () => {
@@ -73,16 +73,16 @@ const LoginDialog = () => {
 
            <Component>  
               <Container>
-                 <Title>To use ChatEase on your Computer:</Title>  
+                 <Title>𝚃𝚘 𝚄𝚜𝚎 𝙲𝚑𝚊𝚝𝙴𝚊𝚜𝚎 𝙾𝚗 𝚈𝚘𝚞𝚛 𝙲𝚘𝚖𝚙𝚞𝚝𝚎𝚛:</Title>  
                  <StyledList>
-                    <ListItem>1. Click on the sign in with Google.</ListItem>
-                    <ListItem>2. Enter your mail id. </ListItem>
-                    <ListItem>3. If you already done the 2nd step then choose your mail.</ListItem>
+                    <ListItem>1.  𝙲𝚕𝚒𝚌𝚔 𝚘𝚗 𝚝𝚑𝚎 𝚜𝚒𝚐𝚗 𝚒𝚗 𝚠𝚒𝚝𝚑 𝙶𝚘𝚘𝚐𝚕𝚎.</ListItem>
+                    <ListItem>2. 𝙴𝚗𝚝𝚎𝚛 𝚢𝚘𝚞𝚛 𝚖𝚊𝚒𝚕 𝚒𝚍. </ListItem>
+                    <ListItem>3. 𝙸𝚏 𝚢𝚘𝚞 𝚊𝚕𝚛𝚎𝚊𝚍𝚢 𝚍𝚘𝚗𝚎 𝚝𝚑𝚎 2𝚗𝚍 𝚜𝚝𝚎𝚙 𝚝𝚑𝚎𝚗 𝚌𝚑𝚘𝚘𝚜𝚎 𝚢𝚘𝚞𝚛 𝚖𝚊𝚒𝚕.</ListItem>
                  </StyledList> 
               </Container>
               <Box style={{ position: 'relative'}}>
                 <QRCode src={qrCodeImage} alt="qr code" />
-                <Box style={{ position: 'absolute', top: '50%', left: '15%', transform: 'translateX(25%)' }}>
+                <Box style={{ position: 'absolute', top: '62%', left: -17, transform: 'translateX(25%)' }}>
                    <GoogleLogin
                      onSuccess={onLoginSuccess}
                      onError={onLoginError}

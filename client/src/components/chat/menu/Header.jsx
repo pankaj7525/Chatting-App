@@ -1,17 +1,13 @@
 import { useContext, useState } from "react";
 import { AccountContext } from "../../../context/AccountProvider";
 
-
-import { DonutLargeOutlined } from '@mui/icons-material';
 import { Box, Typography, styled } from "@mui/material";
 import HeaderMenu from "./HeaderMenu";
 import InfoDrawer from "../../drawer/InfoDrawer";
 
 const Component = styled(Box)`
     height: 55px ;
-    // background: linear-gradient(45deg, #93B1A6 30%, #A5A7A8 90%) ;
-    background: linear-gradient(180deg, #0B7510 0%, rgba(84, 125, 18, 0.54) 45.83%, #95A4BB 100%);
-    padding: 8px 20px ;
+    padding: 20px 20px ;
     display: flex;
     align-items: center;
 `;
@@ -21,7 +17,7 @@ const Wrapper = styled(Box)`
     & > * {
         margin-left: 2px;
         padding: 8px;
-        color; #000;    
+        color;#000;    
     };
     & :first-child {
         font-size: 22px;
@@ -31,7 +27,7 @@ const Wrapper = styled(Box)`
 `;
 const Image = styled('img')({
     height: 28,
-    width: 30,
+    width: 28,
     borderRadius: '50%', 
   })
 
@@ -47,10 +43,10 @@ const Header = () => {
     return(
         <>
             <Component>
-                   <Typography style={{ fontWeight: '700', fontSize: '28px', fontStyle: 'inherit', }}>Chats</Typography>
-                <Wrapper style={{cursor:'pointer'}}>
+             <Typography style={{ fontWeight: '700', fontSize: '38px', fontStyle: 'inherit', color: 'white' }}>Chats</Typography>
+                <Wrapper style={{cursor:'pointer', color: 'white'}}>
                     <Image src={account.picture} alt="dp" onClick={() => toggleDrawer()} />
-                    <DonutLargeOutlined />
+                    {/* <DonutLargeOutlined /> */}
                     <HeaderMenu setOpenDrawer={setOpenDrawer} /> 
                 </Wrapper>
             </Component>

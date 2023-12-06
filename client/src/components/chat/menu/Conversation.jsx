@@ -7,7 +7,7 @@ import { formatDate } from "../../../utils/common-utils";
 const Component = styled(Box)`
     display: flex;
     height: 45px;
-    padding: 13px 0;
+    padding: 14px 0;
     cursor: pointer;
 
 `;
@@ -16,7 +16,7 @@ const Image = styled('img')({
     width: 50,
     height: 50,
     borderRadius: '50%',
-    padding: '0 14px',
+    padding: '25px 14px',
     objectFit: 'cover'
 })
 
@@ -46,7 +46,7 @@ const  Conversation = ({user}) => {
                 <Image src={user.picture} alt="dp"/>
             </Box>
             <Box>
-                <Box>
+                <Box style={{color: 'white', padding: '32px 14px'}}>
                     <Typography>{user.name}</Typography>
                     {
                         message?.text &&

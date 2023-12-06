@@ -13,7 +13,6 @@ import { Message } from './Message';
 const Wrapper = styled(Box)`
     background-image: url(${'https://img.freepik.com/premium-vector/social-networks-dating-apps-vector-seamless-pattern_341076-469.jpg'});
     background-size: 50%;
-    ${'' /* opacity: 0.5; */}
 `;
 
 

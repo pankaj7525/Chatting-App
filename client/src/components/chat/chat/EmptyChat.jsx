@@ -2,7 +2,7 @@
 import { Box, Typography, styled, Divider } from '@mui/material';
 
 const Component = styled(Box)`
-     background: #f7f5f9;
+     background: #222222;
      padding: 30px 0;
      text-align: center;
      height: 100vh;
@@ -57,7 +57,7 @@ const EmptyChat = () => {
                 <SubTitle>" 𝔏𝔢𝔱'𝔰 𝔰𝔱𝔞𝔯𝔱 𝔠𝔥𝔞𝔱𝔱𝔦𝔫𝔤! "</SubTitle>
                 <SubTitle02> Pick a person from left menu and start your conversation. </SubTitle02>
                 <SubTitle02>Now send and recieve messages without keeping your phone online. </SubTitle02>
-                <StyledDivider sx={{ borderBottomWidth: 8 }}/>
+                <StyledDivider sx={{ borderBottomWidth: 8, borderBlockColor: 'grey' }}/>
             </Container>
         </Component>
     )

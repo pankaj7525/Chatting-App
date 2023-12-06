@@ -2,18 +2,18 @@ import { Box, InputBase, styled } from "@mui/material";
 import { Search as SearchIcon } from "@mui/icons-material";
 
 const Component = styled(Box)`
-    background: #fff;
-    height: 45px;
-    border-bottom: 1px solid #F2F2F2; 
+    background: #000000;
+    height: 55px;
+    ${'' /* border-bottom: 1px solid #F2F2F2;  */}
     display: flex;
     align-items: center;
 `;
 
 
 const Wrapper = styled(Box)`
-    background-color: #f0f2f5;
+    background-color: grey;
     position: relative;
-    margin: 0 13px;
+    margin: 0 15px;
     width: 100%;
     border-radius: 10px;
 `;

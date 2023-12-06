@@ -24,7 +24,7 @@ const Rightcomponent = styled(Box)`
     width: 73%;
     min-width: 300px;
     height: 100%;
-    border-left: 1px solid rgba(0, 0, 0, 0.14);
+    border-left: 1px solid grey;
 `;
 
 const dialogStyle ={
@@ -38,6 +38,7 @@ const dialogStyle ={
     boxshadow: 'none',
     overflow: 'hidden',
     borderRadius: '10px',
+    backgroundColor: '#202020',
 }
 
 
