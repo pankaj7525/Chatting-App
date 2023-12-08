@@ -1,12 +1,41 @@
 import { useContext } from 'react';
 
-import { Box, Typography, styled } from '@mui/material';
-import { Search, MoreVert, LocalPhone, Videocam } from '@mui/icons-material';
+import { Box, Typography, styled, InputBase } from '@mui/material';
+// import { Search, MoreVert, LocalPhone, Videocam } from '@mui/icons-material';
+import { Search as SearchIcon } from "@mui/icons-material";
 
 // import { defaultProfilePicture } from '../../../constants/data';
 import { AccountContext } from '../../../context/AccountProvider';
 
+const Component = styled(Box)`
+    height: 55px;
+    display: flex;
+    align-items: center;
+`;
 
+const Wrapper = styled(Box)`
+    background-color: grey;
+    position: relative;
+    margin: 0 15px;
+    width: 80%;
+    border: 3px solid #000000;
+    border-radius: 10px;
+`;
+
+const Icon = styled(Box)`
+    position: absolute;
+    height: 100%;
+    padding: 5px 10px;
+    color: #919191;
+`;
+
+const InputField  = styled(InputBase)`
+    width: 100%;
+    padding: 16px;
+    padding-left: 38px;
+    height: 15px;
+    font-size: 14px;
+`;
 
 const Header = styled(Box)`
     height: 55px;
@@ -39,11 +68,12 @@ const RightContainer = styled(Box)`
         padding: 8px;
         font-size: 24px;
         color: #fff;
+        cursor: pointer;
     }
 `;
 
 
-const ChatHeader = ({person}) => {
+const ChatHeader = ({person, setText}) => {
     
     const { activeUsers } = useContext(AccountContext);
 
@@ -59,9 +89,20 @@ const ChatHeader = ({person}) => {
             </Box>
             <RightContainer>
                 {/* <Videocam /> */}
-                <LocalPhone />
-                <Search />
-                <MoreVert />
+                {/* <LocalPhone /> */}
+                <Component>
+            <Wrapper> 
+                <Icon>
+                    <SearchIcon
+                        fontSize="small"
+                    />
+                </Icon>
+                <InputField
+                    placeholder='Search or start new chat'
+                />
+            </Wrapper>
+        </Component>
+                {/* <MoreVert /> */}
             </RightContainer>
         </Header>
     )
