@@ -2,6 +2,7 @@ import { useState } from "react";
 
 import { MoreVert } from "@mui/icons-material";
 import { Menu, MenuItem, styled } from "@mui/material";
+import { useAuth0 } from "@auth0/auth0-react";
 
 const MenuOption = styled(MenuItem)`
     font-size: 14px;
@@ -12,6 +13,7 @@ const MenuOption = styled(MenuItem)`
 const HeaderMenu = ({ setOpenDrawer }) => {
 
     const [ open, setopen ] = useState(null);
+    const { logout } = useAuth0();
 
     const handleClose = () => {
         setopen(null);
@@ -21,6 +23,10 @@ const HeaderMenu = ({ setOpenDrawer }) => {
         setopen(e.currentTarget);
     }
 
+    const handleLogoutClick = () => {
+        logout({ returnTo: window.location.origin });
+        handleClose();
+    }
 
     return (
         <>
@@ -41,7 +47,7 @@ const HeaderMenu = ({ setOpenDrawer }) => {
                 }}
             >
                 <MenuOption onClick={() =>  { handleClose(); setOpenDrawer(true); }}>Profile</MenuOption>
-                <MenuOption onClick={handleClose}>Logout</MenuOption>
+                <MenuOption onClick={handleLogoutClick}>Logout</MenuOption>
             </Menu>
         </>
     )
